@@ -1,0 +1,114 @@
+<!-- chisiamo.html -->
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Siamo - Sunamu Project</title>
+    <meta name="description"
+        content="Scopri la mission, i valori e la storia del progetto musicale Sunamu. Un team di professionisti unito dalla passione per la musica live.">
+    <meta name="author" content="Sunamu Project">
+    <link rel="canonical" href="https://www.sunamu.music/chisiamo.html">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Chi Siamo",
+    "description": "La storia, i valori e la mission di Sunamu: eventi musicali autentici e talenti emergenti.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Sunamu Project",
+      "url": "https://www.sunamu.music",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.sunamu.music/assets/images/logo.png"
+      },
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "Claudio Tumino"
+        },
+        {
+          "@type": "Person",
+          "name": "Dennis Bon"
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body class="bg-black text-white">
+    <div id="navbar-placeholder"></div>
+
+    <section class="py-5">
+        <div class="container">
+            <h1 class="mb-5 text-center display-5 fw-bold" data-aos="fade-down">Chi Siamo</h1>
+
+            <div class="row align-items-center mb-5" data-aos="fade-right">
+                <div class="col-md-6">
+                    <h2 class="h3">La Nostra Mission</h2>
+                    <p>Sunamu nasce dall'amore per la musica live e dalla voglia di accendere la scena musicale italiana
+                        con eventi autentici e coinvolgenti.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/mission.jpg" alt="Mission Sunamu" class="img-fluid rounded shadow">
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-left">
+                <div class="col-md-6">
+                    <h2 class="h3">I Nostri Valori</h2>
+                    <ul>
+                        <li>Inclusività</li>
+                        <li>Creatività</li>
+                        <li>Sostenibilità</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/valori.jpg" alt="Valori di Sunamu" class="img-fluid rounded shadow">
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-5" data-aos="fade-right">
+                <div class="col-md-6">
+                    <h2 class="h3">Il Team</h2>
+                    <p>Organizzatori, artisti, tecnici del suono e designer: uniti da una sola visione, portare la
+                        musica dal vivo a tutti con passione e qualità.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/team.jpg" alt="Team Sunamu" class="img-fluid rounded shadow">
+                </div>
+            </div>
+
+            <div class="row align-items-center" data-aos="fade-up">
+                <div class="col text-center">
+                    <h2 class="h3">La Nostra Storia</h2>
+                    <p>Un progetto nato dall’unione di professionalità e passione: Claudio Tumino e Dennis Bon fondano
+                        Sunamu per trasformare la scena musicale, puntando su eventi dal vivo, artisti emergenti e
+                        produzioni curate nei minimi dettagli. Non è solo lavoro: è la nostra visione di futuro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="cookie-banner.js"></script>
+    <script>
+        AOS.init();
+        fetch('partials/navbar.html').then(res => res.text()).then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+        fetch('partials/footer.html').then(res => res.text()).then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+
+</html>

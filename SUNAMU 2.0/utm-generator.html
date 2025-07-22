@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generatore Link UTM | Sunamu</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        body {
+            padding: 2rem;
+            font-family: sans-serif;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .output {
+            background: #f0f0f0;
+            padding: 1rem;
+            word-break: break-all;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🎯 Generatore Link UTM</h1>
+
+    <label for="base">URL base:</label>
+    <input type="text" id="base" value="https://sunamu.music/blog/">
+
+    <label for="source">utm_source:</label>
+    <input type="text" id="source" placeholder="es. instagram, facebook, newsletter">
+
+    <label for="medium">utm_medium:</label>
+    <input type="text" id="medium" placeholder="es. social, email, referral">
+
+    <label for="campaign">utm_campaign:</label>
+    <input type="text" id="campaign" placeholder="es. talent2025, promoaprile">
+
+    <label for="term">utm_term (facoltativo):</label>
+    <input type="text" id="term" placeholder="es. keyword, artista">
+
+    <label for="content">utm_content (facoltativo):</label>
+    <input type="text" id="content" placeholder="es. banner-top, video-ig">
+
+    <button onclick="generaUTM()">Genera link</button>
+
+    <h2>🔗 Link generato:</h2>
+    <div class="output" id="output"></div>
+
+    <script>
+        function generaUTM() {
+            const base = document.getElementById('base').value.trim();
+            const source = document.getElementById('source').value.trim();
+            const medium = document.getElementById('medium').value.trim();
+            const campaign = document.getElementById('campaign').value.trim();
+            const term = document.getElementById('term').value.trim();
+            const content = document.getElementById('content').value.trim();
+
+            let url = `${base}?utm_source=${encodeURIComponent(source)}&utm_medium=${encodeURIComponent(medium)}&utm_campaign=${encodeURIComponent(campaign)}`;
+            if (term) url += `&utm_term=${encodeURIComponent(term)}`;
+            if (content) url += `&utm_content=${encodeURIComponent(content)}`;
+
+            document.getElementById('output').innerText = url;
+        }
+    </script>
+
+</body>
+
+</html>

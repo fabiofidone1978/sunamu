@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuovo Articolo | Sunamu Music</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <main>
+        <section class="form-container">
+            <h1>Pubblica un nuovo articolo</h1>
+            <form action="php/salva_articolo.php" method="POST">
+                <input type="text" name="titolo" placeholder="Titolo" required>
+                <textarea name="descrizione" placeholder="Contenuto breve" required></textarea>
+                <button type="submit">Pubblica</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

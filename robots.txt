@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /php/
+Disallow: /partials/
+Disallow: /cgi-bin/
+
+Sitemap: https://www.sunamu.music/seo/sitemap_index.xml

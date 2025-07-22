@@ -1,0 +1,30 @@
+[25-Apr-2025 22:03:38 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/sunam220/public_html/php/send_contact.php:8
+Stack trace:
+#0 /home/sunam220/public_html/php/send_contact.php(8): mysqli->__construct('31.11.39.211', 'Sql1855273', 'Daniela.77', 'sunam220_Sql185...')
+#1 {main}
+  thrown in /home/sunam220/public_html/php/send_contact.php on line 8
+[25-Apr-2025 22:10:21 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/sunam220/public_html/php/send_contact.php:8
+Stack trace:
+#0 /home/sunam220/public_html/php/send_contact.php(8): mysqli->__construct('31.11.39.211', 'Sql1855273', 'Daniela.77', 'sunam220_Sql185...')
+#1 {main}
+  thrown in /home/sunam220/public_html/php/send_contact.php on line 8
+[25-Apr-2025 22:10:35 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/sunam220/public_html/php/send_contact.php:8
+Stack trace:
+#0 /home/sunam220/public_html/php/send_contact.php(8): mysqli->__construct('31.11.39.211', 'Sql1855273', 'Daniela.77', 'sunam220_Sql185...')
+#1 {main}
+  thrown in /home/sunam220/public_html/php/send_contact.php on line 8
+[25-Apr-2025 22:11:37 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/sunam220/public_html/php/send_contact.php:8
+Stack trace:
+#0 /home/sunam220/public_html/php/send_contact.php(8): mysqli->__construct('31.11.39.211', 'Sql1855273', 'Daniela.77', 'sunam220_Sql185...')
+#1 {main}
+  thrown in /home/sunam220/public_html/php/send_contact.php on line 8
+[25-Apr-2025 22:11:57 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/sunam220/public_html/php/send_contact.php:8
+Stack trace:
+#0 /home/sunam220/public_html/php/send_contact.php(8): mysqli->__construct('31.11.39.211', 'Sql1855273', 'Daniela.77', 'sunam220_Sql185...')
+#1 {main}
+  thrown in /home/sunam220/public_html/php/send_contact.php on line 8
+[25-Apr-2025 22:12:43 Europe/Rome] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'sunam220_Fabio'@'localhost' to database 'sunam220_sunamu_db' in /home/sunam220/public_html/php/send_contact.php:7
+Stack trace:
+#0 /home/sunam220/public_html/php/send_contact.php(7): mysqli->__construct('localhost', 'sunam220_Fabio', 'Daniela.77', 'sunam220_sunamu...')
+#1 {main}
+  thrown in /home/sunam220/public_html/php/send_contact.php on line 7

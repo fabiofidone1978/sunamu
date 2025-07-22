@@ -1,0 +1,42 @@
+[
+    {
+        "titolo": "Private Party 2025",
+        "descrizione": "Guest Star: Massimo Zen Zennaro, DJ set Claudio Tumino, Guest: Moxè",
+        "data": "03 Maggio 2025",
+        "localita": "Venezia",
+        "immagine": "assets/images/privateparty.jpg",
+        "alt": "Private Party 2025"
+    },
+    {
+        "titolo": "Reboot",
+        "descrizione": "Massimo Zen Zennaro, DJ set Claudio Tumino, Lead vocal: Gladys Dartril",
+        "data": "Coming soon",
+        "localita": "Padova",
+        "immagine": "assets/images/zen90.jpg",
+        "alt": "Reboot"
+    },
+    {
+        "titolo": "DISCO 80",
+        "descrizione": "Performance vocali su \"original track\", ballando sino al mattino",
+        "data": "Coming soon",
+        "localita": "Treviso",
+        "immagine": "assets/images/disco80.jpg",
+        "alt": "DISCO 80"
+    },
+    {
+        "titolo": "Massimo Zen Zennaro",
+        "descrizione": "Una pioggia di successi che hanno fatto storia",
+        "data": "Coming soon",
+        "localita": "Venezia",
+        "immagine": "assets/images/zennaro.jpg",
+        "alt": "Massimo Zen Zennaro Live"
+    },
+    {
+        "titolo": "Summer Beats 2025",
+        "descrizione": "Dance, Techno, Progressive, Minimal",
+        "data": "10 Maggio 2025",
+        "localita": "Cavallino-Treporti",
+        "immagine": "assets/images/bunkerprivee.jpg",
+        "alt": "Summer Beats 2025"
+    }
+]

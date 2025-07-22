@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Homepage Sunamu -->
+  <url>
+    <loc>https://www.sunamu.music/</loc>
+    <lastmod>2025-04-27</lastmod>
+    <priority>1.00</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Pagina Blog -->
+  <url>
+    <loc>https://www.sunamu.music/blog.html</loc>
+    <lastmod>2025-04-27</lastmod>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Pagina Eventi -->
+  <url>
+    <loc>https://www.sunamu.music/eventi.html</loc>
+    <lastmod>2025-04-27</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Pagina Shop -->
+  <url>
+    <loc>https://www.sunamu.music/shop.html</loc>
+    <lastmod>2025-04-27</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- SEO Sunamu gestito da WordPress -->
+  <url>
+    <loc>https://www.sunamu.music/seo/</loc>
+    <lastmod>2025-04-27</lastmod>
+    <priority>0.90</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+</urlset>

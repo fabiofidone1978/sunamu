@@ -1,0 +1,12 @@
+# Impedisci esecuzione file PHP
+<FilesMatch "\.(php|php3|php4|php5|phtml)$">
+    Deny from all
+</FilesMatch>
+
+# Permetti solo PDF e immagini
+<FilesMatch "\.(pdf|jpg|jpeg|png)$">
+    Allow from all
+</FilesMatch>
+
+# Impedisci l'indicizzazione
+Options -Indexes

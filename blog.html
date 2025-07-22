@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Scopri gli articoli e le novità di Sunamu Music. Tutti i post dei nostri talenti.">
+  <title>Blog | Sunamu Music</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="navbar"></div>
+
+  <main>
+    <section class="blog-container">
+      <h1>Ultimi articoli</h1>
+      <div id="blog-list"></div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/script.js"></script>
+  <script>
+    fetch('php/posts.json')
+      .then(res => res.json())
+      .then(data => {
+        const blogList = document.getElementById('blog-list');
+        blogList.innerHTML = data.map(post => `
+          <article class="blog-post">
+            <h2><a href="#">${post.titolo}</a></h2>
+            <p>${post.descrizione}</p>
+            <small>Data: ${post.data}</small>
+          </article>
+        `).join('');
+      });
+  </script>
+</body>
+
+</html>

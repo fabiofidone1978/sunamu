@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I Nostri Artisti - Sunamu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        body {
+            background-color: #000;
+            color: #f8b14d;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .artist-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .detail {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <section class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-5 display-5 fw-bold">I Nostri Artisti</h1>
+
+            <!-- Griglia artisti -->
+            <div id="artists-grid" class="row row-cols-1 row-cols-md-2 g-4">
+
+                <!-- Artista 1 -->
+                <div class="col">
+                    <div class="card h-100" onclick="showArtistDetail('zen')">
+                        <img src="assets/images/zennaro/Screenshot 2025-04-13 160938.png"
+                            class="card-img-top artist-img" alt="Artista in scena">
+                        <div class="card-body">
+                            <h5 class="card-title">Massimo Zennaro</h5>
+                            <p class="card-text">Energia pura sul palco.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artista 2 -->
+                <div class="col">
+                    <div class="card h-100" onclick="showArtistDetail('ZeWang')">
+                        <img src="assets/images/ZeWang/ZeWang.png" class="card-img-top artist-img"
+                            alt="Artista in scena">
+                        <div class="card-body">
+                            <h5 class="card-title">Ze Wong</h5>
+                            <p class="card-text">Una novità di cui sentiremo parlare.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artista 3 -->
+                <div class="col">
+                    <div class="card h-100" onclick="showArtistDetail('Moxe')">
+                        <img src="assets/images/Moxe/moxe.png" class="card-img-top artist-img" alt="Artista in scena">
+                        <div class="card-body">
+                            <h5 class="card-title">Moxè</h5>
+                            <p class="card-text">New Talent.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artista 4 -->
+                <div class="col">
+                    <div class="card h-100" onclick="showArtistDetail('Zabrinskje')">
+                        <img src="assets/images/Zabrinskje/zabrinskje.png" class="card-img-top artist-img"
+                            alt="Artista in scena">
+                        <div class="card-body">
+                            <h5 class="card-title">Frank Zabrinskje</h5>
+                            <p class="card-text">Innovazione sonora.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artista 5 -->
+                <div class="col">
+                    <div class="card h-100" onclick="showArtistDetail('Tumino')">
+                        <img src="assets/images/Tumino/tumino2.jpg" class="card-img-top artist-img"
+                            alt="Artista in scena">
+                        <div class="card-body">
+                            <h5 class="card-title">Claudio Tumino</h5>
+                            <p class="card-text">L'esperienza dietro la console.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Dettagli artisti -->
+            <div id="zen" class="detail">
+                <h2 class="mb-3">Massimo Zennaro</h2>
+                <blockquote class="blockquote text-warning fst-italic">
+                    "La musica è il silenzio tra due emozioni." – Massimo Zennaro
+                </blockquote>
+                <div id="carouselZen" class="carousel slide mt-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/zennaro/Screenshot 2025-04-13 161036.png" class="d-block w-100"
+                                alt="Live 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/zennaro/neve-150x150.jpg" class="d-block w-100" alt="Live 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/zennaro/slide_2-150x150.jpg" class="d-block w-100" alt="Live 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/zennaro/admin-ajax.jpg" class="d-block w-100" alt="Live 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <a href="https://www.instagram.com/massimozennaro_official"
+                        class="btn btn-outline-warning btn-sm me-2">Instagram</a>
+                    <a href="https://www.facebook.com/profile.php?id=61574219496571"
+                        class="btn btn-outline-warning btn-sm me-2">Facebook</a>
+                    <a href="https://www.tiktok.com/@zen90music" class="btn btn-outline-warning btn-sm">TikTok</a>
+                </div>
+                <button class="btn btn-warning mt-4" onclick="backToGrid()">Torna indietro</button>
+            </div>
+
+            <div id="ZeWang" class="detail">
+                <h2 class="mb-3">Ze Wong</h2>
+                <div class="ratio ratio-16x9 mt-4">
+                    <iframe src="https://www.youtube.com/watch?v=GjWgzJ5X09c" title="Video Artista"
+                        allowfullscreen></iframe>
+                </div>
+                <button class="btn btn-warning mt-4" onclick="backToGrid()">Torna indietro</button>
+            </div>
+
+            <div id="Moxe" class="detail">
+                <h2 class="mb-3">Moxè</h2>
+                <div id="carouselMoxe" class="carousel slide mt-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/Moxe/moxe.png" class="d-block w-100" alt="Moxe Live 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/Moxe/moxe2.jpg" class="d-block w-100" alt="Moxe Live 2">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-warning mt-4" onclick="backToGrid()">Torna indietro</button>
+            </div>
+
+            <div id="Zabrinskje" class="detail">
+                <h2 class="mb-3">Frank Zabrinskje</h2>
+                <div id="carouselZabrinskje" class="carousel slide mt-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/Zabrinskje/zabrinskje.jpg" class="d-block w-100"
+                                alt="Zabrinskje Live">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-warning mt-4" onclick="backToGrid()">Torna indietro</button>
+            </div>
+
+            <div id="Tumino" class="detail">
+                <h2 class="mb-3">Claudio Tumino</h2>
+                <div id="carouselTumino" class="carousel slide mt-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/Tumino/tumino.jpg" class="d-block w-100" alt="Tumino Live">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-warning mt-4" onclick="backToGrid()">Torna indietro</button>
+            </div>
+
+        </div> <!-- /.container -->
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showArtistDetail(id) {
+            document.getElementById('artists-grid').style.display = 'none';
+            document.querySelectorAll('.detail').forEach(div => div.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+
+        function backToGrid() {
+            document.querySelectorAll('.detail').forEach(div => div.style.display = 'none');
+            document.getElementById('artists-grid').style.display = 'flex';
+        }
+
+        fetch('partials/navbar.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+
+        fetch('partials/footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+
+</html>

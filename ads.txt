@@ -1,0 +1,9 @@
+# Authorized Digital Sellers for sunamu.music
+
+# Se in futuro utilizzerai Google AdSense:
+google.com, pub-7361098351149782, DIRECT, f08c47fec0942fa0
+
+# Se userai altre piattaforme (es: Meta Audience Network, Amazon):
+# Aggiungerai righe simili
+
+# Documentazione ufficiale ads.txt: https://iabtechlab.com/ads-txt/

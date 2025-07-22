@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I Nostri Artisti - Sunamu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <section class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-5 display-5 fw-bold text-warning">I Nostri Artisti</h1>
+      <div id="artists-grid" class="row row-cols-1 row-cols-md-2 g-4"></div>
+      <div id="artist-detail" class="mt-5" style="display: none;"></div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    async function loadArtisti() {
+      const grid = document.getElementById("artists-grid");
+      const detail = document.getElementById("artist-detail");
+      const res = await fetch("artisti.json");
+      const artisti = await res.json();
+
+      artisti.forEach(artista => {
+        const col = document.createElement("div");
+        col.className = "col";
+        col.innerHTML = `
+          <div class="card h-100 artist-card" onclick="showArtist('${artista.id}')">
+            <img src="${artista.cover}" class="card-img-top img-fixed" alt="${artista.nome}" />
+            <div class="card-body">
+              <h5 class="card-title">${artista.nome}</h5>
+              <p class="card-text">${artista.descrizione}</p>
+            </div>
+          </div>`;
+        grid.appendChild(col);
+
+        // dettaglio nascosto
+        const d = document.createElement("div");
+        d.id = artista.id;
+        d.className = "detail";
+        d.style.display = "none";
+        d.innerHTML = `
+          <h2 class="mb-3">${artista.nome}</h2>
+          ${artista.citazione ? `<blockquote class="blockquote text-warning fst-italic">${artista.citazione}</blockquote>` : ""}
+          ${artista.youtube ? `<div class="ratio ratio-16x9 mt-4"><iframe src="${artista.youtube}" title="Video" allowfullscreen></iframe></div>` : ""}
+          ${artista.carousel?.length ? `
+            <div id="carousel-${artista.id}" class="carousel slide mt-4" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                ${artista.carousel.map((img, i) => `
+                  <div class="carousel-item ${i === 0 ? 'active' : ''}">
+                    <img src="${img}" class="d-block w-100" alt="${artista.nome} ${i + 1}" />
+                  </div>`).join('')}
+              </div>
+            </div>` : ""}
+          <div class="mt-4">
+            ${artista.social?.instagram ? `<a href="${artista.social.instagram}" class="btn btn-outline-warning btn-sm me-2">Instagram</a>` : ""}
+            ${artista.social?.facebook ? `<a href="${artista.social.facebook}" class="btn btn-outline-warning btn-sm me-2">Facebook</a>` : ""}
+            ${artista.social?.tiktok ? `<a href="${artista.social.tiktok}" class="btn btn-outline-warning btn-sm me-2">TikTok</a>` : ""}
+          </div>
+          <button class="btn btn-warning mt-4" onclick="backToGrid()">Torna indietro</button>
+        `;
+        detail.appendChild(d);
+      });
+    }
+
+    function showArtist(id) {
+      document.getElementById("artists-grid").style.display = "none";
+      document.getElementById("artist-detail").style.display = "block";
+      document.querySelectorAll(".detail").forEach(d => d.style.display = "none");
+      document.getElementById(id).style.display = "block";
+    }
+
+    function backToGrid() {
+      document.getElementById("artist-detail").style.display = "none";
+      document.getElementById("artists-grid").style.display = "flex";
+    }
+
+    fetch("partials/navbar.html").then(r => r.text()).then(data => document.getElementById("navbar-placeholder").innerHTML = data);
+    fetch("partials/footer.html").then(r => r.text()).then(data => document.getElementById("footer-placeholder").innerHTML = data);
+
+    loadArtisti();
+  </script>
+</body>
+
+</html>

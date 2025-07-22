@@ -1,0 +1,60 @@
+<!-- shop.html -->
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop Sunamu - Musica, Merchandising e Biglietti</title>
+<meta name="description"
+    content="Acquista i brani musicali ufficiali, il merchandising esclusivo e i biglietti degli eventi Sunamu. Scopri le offerte del nostro shop.">
+<link rel="canonical" href="https://www.sunamu.music/shop.html">
+<meta name="robots" content="index, follow">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .coming-soon {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .emoji {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+    <div id="navbar-placeholder"></div>
+
+    <section class="coming-soon" data-aos="fade-up">
+        <div>
+            <div class="emoji">🛍️😎</div>
+            <h1>Coming Soon</h1>
+            <p class="lead">Stiamo preparando il nostro shop musicale con stile!<br>Passa a trovarci presto 🎶</p>
+            <a href="index.html" class="btn btn-outline-warning mt-4">Torna alla Home</a>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="cookie-banner.js"></script>
+    <script>
+        AOS.init();
+        fetch('partials/navbar.html').then(res => res.text()).then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+        fetch('partials/footer.html').then(res => res.text()).then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+
+</html>

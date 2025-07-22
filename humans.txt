@@ -1,0 +1,16 @@
+/* TEAM */
+Developer: Fabio Fidone
+Site: https://www.sunamu.music
+Twitter: https://twitter.com/sunamumusic (o altro social, se lo vuoi aggiungere)
+
+/* THANKS */
+Thanks to: all contributors, artists, and the Sunamu music community
+
+/* SITE */
+Standards: HTML5, CSS3, PHP8
+Components: Yoast SEO, Custom HTML/PHP Framework
+Software: Visual Studio Code, cPanel, WordPress for SEO
+Hosting: Aruba
+
+/* CONTACT */
+Email: admin@sunamu.music

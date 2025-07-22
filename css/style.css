@@ -1,0 +1,48 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #222;
+}
+
+.hero {
+    background: url('../assets/images/hero-bg.jpg') no-repeat center center/cover;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 4px #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive spacing */
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Footer styling */
+footer a {
+    background-color: #000;
+    color: #f8b14d;
+    text-decoration: none;
+}
+footer-placeholder{
+    background-color: #000;
+        color: #f8b14d;
+        text-decoration: none;
+    }
+.artist-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    /* rapporto 1:1 (quadrato); cambia in 4/3, 16/9… come vuoi */
+    object-fit: cover;
+    /* crop intelligente per riempire il box */
+}

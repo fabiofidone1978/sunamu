@@ -1,0 +1,70 @@
+[
+    {
+        "nome": "Massimo Zennaro",
+        "strumento": "Voce",
+        "descrizione": "Energia pura sul palco.",
+        "localita": "Venezia",
+        "immagine": "..sunamu.music/assets/images/zennaro/Screenshot 2025-04-13 160938.png",
+        "alt": "Massimo Zennaro - Live",
+        "id": "zen",
+        "quote": "La musica è il silenzio tra due emozioni.",
+        "social": {
+            "instagram": "https://www.instagram.com/massimozennaro_official",
+            "facebook": "https://www.facebook.com/profile.php?id=61574219496571",
+            "tiktok": "https://www.tiktok.com/@zen90music"
+        },
+        "carousel": [
+            "assets/images/zennaro/Screenshot 2025-04-13 161036.png",
+            "assets/images/zennaro/neve-150x150.jpg",
+            "assets/images/zennaro/slide_2-150x150.jpg",
+            "assets/images/zennaro/admin-ajax.jpg"
+        ]
+    },
+    {
+        "nome": "Ze Wong",
+        "strumento": "Voce",
+        "descrizione": "Una novità di cui sentiremo parlare.",
+        "localita": "Padova",
+        "immagine": "assets/images/ZeWang/ZeWang.png",
+        "alt": "Ze Wong - Artista emergente",
+        "id": "ZeWang",
+        "video": "https://www.youtube.com/watch?v=GjWgzJ5X09c"
+    },
+    {
+        "nome": "Moxè",
+        "strumento": "Voce",
+        "descrizione": "New Talent.",
+        "localita": "Venezia",
+        "immagine": "assets/images/Moxe/moxe.png",
+        "alt": "Moxè - Vocal Talent",
+        "id": "Moxe",
+        "carousel": [
+            "assets/images/Moxe/moxe.png",
+            "assets/images/Moxe/moxe2.jpg"
+        ]
+    },
+    {
+        "nome": "Frank Zabrinskje",
+        "strumento": "Produzione",
+        "descrizione": "Innovazione sonora.",
+        "localita": "Bologna",
+        "immagine": "assets/images/Zabrinskje/zabrinskje.png",
+        "alt": "Frank Zabrinskje - Producer",
+        "id": "Zabrinskje",
+        "carousel": [
+            "assets/images/Zabrinskje/zabrinskje.jpg"
+        ]
+    },
+    {
+        "nome": "Claudio Tumino",
+        "strumento": "DJ",
+        "descrizione": "L'esperienza dietro la console.",
+        "localita": "Treviso",
+        "immagine": "assets/images/Tumino/tumino2.jpg",
+        "alt": "Claudio Tumino - DJ",
+        "id": "Tumino",
+        "carousel": [
+            "assets/images/Tumino/tumino.jpg"
+        ]
+    }
+]
